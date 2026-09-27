@@ -1,0 +1,503 @@
+/* =================================
+        WITHDRAWALS PAGE
+================================= */
+
+.withdrawals-page {
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* =================================
+        PAGE HEADER
+================================= */
+
+.withdrawals-header {
+    margin-bottom: 25px;
+}
+
+.withdrawals-header h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.withdrawals-header h2 i {
+    color: #6366f1;
+    margin-right: 8px;
+}
+
+.withdrawals-header p {
+    margin: 6px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+        WITHDRAW SECTION
+================================= */
+
+.withdraw-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+        SECTION HEADER
+================================= */
+
+.withdraw-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 14px;
+}
+
+.withdraw-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.withdraw-title h3 {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.withdraw-title p {
+    margin: 4px 0 0;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+
+/* =================================
+        SECTION ICON
+================================= */
+
+.withdraw-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 16px;
+}
+
+.upi-icon {
+    background: #eef2ff;
+    color: #6366f1;
+}
+
+.bank-icon {
+    background: #f3e8ff;
+    color: #8b5cf6;
+}
+
+
+/* =================================
+        REQUEST COUNT
+================================= */
+
+.withdraw-count {
+    padding: 7px 12px;
+
+    background: #f8faff;
+
+    color: #6366f1;
+
+    border: 1px solid #e0e7ff;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+        TABLE CARD
+================================= */
+
+.withdraw-table-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =================================
+        RESPONSIVE TABLE
+================================= */
+
+.withdraw-table-card .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =================================
+        TABLE
+================================= */
+
+.withdraw-table {
+    width: 100%;
+    min-width: 950px;
+
+    border-collapse: collapse;
+}
+
+
+/* Bank table needs more space */
+
+.bank-table {
+    min-width: 1150px;
+}
+
+
+/* =================================
+        TABLE HEAD
+================================= */
+
+.withdraw-table thead {
+    background: #f8faff;
+}
+
+.withdraw-table th {
+    padding: 15px 18px;
+
+    color: #6b7280;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* =================================
+        TABLE BODY
+================================= */
+
+.withdraw-table td {
+    padding: 16px 18px;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #f0f1f4;
+}
+
+.withdraw-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.withdraw-table tbody tr:hover {
+    background: #fafbff;
+}
+
+.withdraw-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =================================
+        ID
+================================= */
+
+.withdraw-id {
+    color: #6366f1 !important;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+        USER
+================================= */
+
+.withdraw-user {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    min-width: 180px;
+}
+
+.withdraw-user-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.withdraw-user-info strong {
+    color: #1f2937;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.withdraw-user-info span {
+    color: #9ca3af;
+
+    font-size: 11px;
+}
+
+
+/* =================================
+        UPI ID
+================================= */
+
+.upi-value {
+    display: inline-block;
+
+    padding: 6px 9px;
+
+    background: #f5f3ff;
+
+    color: #6d28d9;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+        ACCOUNT HOLDER
+================================= */
+
+.account-holder {
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+        BANK DETAILS
+================================= */
+
+.bank-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+
+    min-width: 150px;
+}
+
+.bank-details strong {
+    color: #374151;
+
+    font-size: 13px;
+}
+
+.bank-details span {
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+.bank-details small {
+    color: #9ca3af;
+
+    font-size: 10px;
+}
+
+
+/* =================================
+        AMOUNT
+================================= */
+
+.amount {
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+        DATE
+================================= */
+
+.withdraw-date {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+
+    white-space: nowrap;
+}
+
+.withdraw-date strong {
+    color: #374151;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.withdraw-date span {
+    color: #9ca3af;
+
+    font-size: 11px;
+}
+
+
+/* =================================
+        Paid BUTTON
+================================= */
+
+.withdraw-paid-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 8px 12px;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+    border: 1px solid #e0e7ff;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    white-space: nowrap;
+}
+
+.withdraw-paid-btn:hover {
+    background: #6366f1;
+
+    color: #ffffff;
+
+    border-color: #6366f1;
+
+    transform: translateY(-1px);
+}
+/* =================================
+        Reject BUTTON
+================================= */
+
+.withdraw-rejected-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+    padding: 8px 12px;
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fee2e2;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.withdraw-rejected-btn:hover {
+    background: #ef4444;
+    color: #ffffff;
+    border-color: #fee2e2;
+    transform: translateY(-1px);
+}
+
+/* =================================
+        MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .withdrawals-page {
+        padding: 15px;
+    }
+
+    .withdrawals-header h2 {
+        font-size: 21px;
+    }
+
+    .withdraw-section-header {
+        align-items: flex-start;
+    }
+
+    .withdraw-title h3 {
+        font-size: 15px;
+    }
+
+    .withdraw-title p {
+        font-size: 11px;
+    }
+
+    .withdraw-count {
+        font-size: 11px;
+    }
+
+    .withdraw-table-card {
+        border-radius: 12px;
+    }
+
+}

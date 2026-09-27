@@ -1,0 +1,175 @@
+/*=========================================
+     PROFILE 
+=========================================*/
+.profile-header{
+    margin-bottom:30px;
+
+}
+
+.profile-header h2{
+    font-size:30px;
+    color:#222;
+    margin-bottom:8px;
+}
+
+.profile-container{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.property-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:22px;
+}
+
+.property-group span{
+    font-size:15px;
+    font-weight:600;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.property-group p{
+    width:100%;
+    color:#1e293b;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    
+    padding:14px 16px;
+    border:1px solid #dcdcdc;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    background:#fafafa;
+    transition:.3s;
+}
+
+.property-group .large-text{
+    resize:vertical;
+    min-height:120px;
+}
+
+/*=========================
+    Profile Image
+=========================*/
+
+.profile-img{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.profile-img img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ececec;
+}
+
+/*       Profile-Image        */
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:22px;
+}
+
+.form-group label{
+    font-size:15px;
+    font-weight:600;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #dcdcdc;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    background:#fafafa;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    border-color:#6366f1;
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(79,70,229,.12);
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+/*=========================
+    Profile Image
+=========================*/
+
+.profile-upload{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.profile-upload img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ececec;
+}
+
+.profile-upload input[type=file]{
+    border:none;
+    padding:0;
+    background:none;
+    border-radius:0px;
+}
+
+/*=========================
+    Button
+=========================*/
+
+.save-profile-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#8b5cf6;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save-profile-btn:hover{
+    background:#7960d4;
+}
+
+/*=========================
+    Note
+=========================*/
+
+.profile-note{
+    margin-top:18px;
+    text-align:center;
+    font-size:13px;
+    color:#777;
+    line-height:1.6;
+}

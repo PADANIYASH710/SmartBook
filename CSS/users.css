@@ -1,0 +1,206 @@
+/* ================================
+        USERS CONTAINER
+================================ */
+
+.users-container {
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* ================================
+        HEADER
+================================ */
+
+.users-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.users-header h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.users-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ================================
+        USER COUNT
+================================ */
+
+.users-count {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.users-count i {
+    font-size: 16px;
+}
+
+
+/* ================================
+        TABLE WRAPPER
+================================ */
+
+.users-table-wrapper {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    overflow-x: auto;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+/* ================================
+        TABLE
+================================ */
+
+.users-table {
+    width: 100%;
+    min-width: 900px;
+
+    border-collapse: collapse;
+}
+
+
+/* ================================
+        TABLE HEAD
+================================ */
+
+.users-table thead {
+    background: #f8fafc;
+}
+
+.users-table th {
+    padding: 15px 18px;
+
+    text-align: left;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #6b7280;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    white-space: nowrap;
+}
+
+
+/* ================================
+        TABLE BODY
+================================ */
+
+.users-table td {
+    padding: 15px 18px;
+
+    font-size: 14px;
+    color: #374151;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    vertical-align: middle;
+}
+
+.users-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.users-table tbody tr:hover {
+    background: #f8faff;
+}
+
+.users-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ================================
+        USER INFO
+================================ */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 2px solid #eef2ff;
+}
+
+.user-info strong {
+    display: block;
+
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-info small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+/* ================================
+        MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .users-container {
+        padding: 15px;
+    }
+
+    .users-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .users-header h2 {
+        font-size: 22px;
+    }
+
+    .users-count {
+        padding: 8px 12px;
+    }
+
+}

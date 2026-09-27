@@ -1,0 +1,504 @@
+:root{
+    --primary:#6366f1;
+    --primary-light:#eef2ff;
+    --secondary:#8b5cf6;x
+
+    --dark:#111827;
+    --text:#374151;
+    --border:#e5e7eb;
+
+    --bg:#f5f7fb;
+    --card:#ffffff;
+
+    --shadow:
+        0 15px 40px rgba(15,23,42,.08);
+
+    --shadow-hover:
+        0 20px 45px rgba(99,102,241,.18);
+}
+
+/*=========================================
+        Disabled
+=========================================*/
+.disabled{
+    pointer-events: none; 
+    cursor: not-allowed;
+    color:#9ca3af;
+    opacity:0.7;
+}
+
+/*=========================================
+DASHBOARD WRAPPER
+=========================================*/
+
+.dashboard-wrapper{
+    padding:30px;
+}
+
+.dashboard-title{
+    font-size:30px;
+    font-weight:700;
+    color:var(--dark);
+    margin-bottom:5px;
+}
+
+.dashboard-subtitle{
+    color:var(--text);
+    margin:0;
+    font-size:15px;
+}
+
+/*=========================================
+STATS CARD
+=========================================*/
+
+.stats-card{
+    border-radius:22px;
+    padding:28px;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:150px;
+    overflow:hidden;
+    position:relative;
+    transition:.35s;
+    cursor:pointer;
+}
+
+.stats-card:hover{
+    transform:translateY(-8px);
+}
+
+.stats-card span{
+    font-size:15px;
+    opacity:.9;
+}
+
+.stats-card h2{
+    margin-top:10px;
+    font-size:35px;
+    font-weight:700;
+}
+
+.stats-icon{
+    width:75px;
+    height:75px;
+    border-radius:20px;
+    background:rgba(255,255,255,.18);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    backdrop-filter:blur(10px);
+}
+
+.stats-icon i{
+    font-size:32px;
+}
+
+
+/*=========================================
+GRADIENT COLORS
+=========================================*/
+
+.blue-card{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+}
+
+.green-card{
+    background:linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    );
+}
+
+.orange-card{
+    background:linear-gradient(
+        135deg,
+        #f59e0b,
+        #ea580c
+    );
+}
+
+
+/*=========================================
+ACTION BAR
+=========================================*/
+
+.dashboard-action{
+    margin-top:35px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.create-post-btn{
+    border:none;
+    outline:none;
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color:#fff;
+    padding:14px 24px;
+    border-radius:14px;
+    font-size:15px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.35s;
+    box-shadow:var(--shadow-hover);
+}
+
+.create-post-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 18px 35px rgba(99,102,241,.25);
+}
+
+.create-post-btn i{
+    font-size:16px;
+}
+
+
+/*=========================================
+POSTS WRAPPER
+=========================================*/
+
+.posts-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+
+/*=========================================
+POST CARD
+=========================================*/
+
+.admin-post-card{
+    position:relative;
+    z-index:1;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:var(--card);
+    border-radius:22px;
+    padding:20px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+    transition:.35s ease;
+}
+
+.admin-post-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-hover);
+    z-index:10;
+}
+
+
+/*=========================================
+POST IMAGE
+=========================================*/
+
+.admin-post-image{
+    width:300px;
+    height:190px;
+    min-width:300px;
+    border-radius:18px;
+    overflow:hidden;
+    background:var(--bg);
+    flex-shrink:0;
+}
+
+.admin-post-image img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.admin-post-image img:hover{
+    transform:scale(1.08);
+}
+
+
+/*=========================================
+POST CONTENT
+=========================================*/
+
+.admin-post-content{
+    flex:1;
+    position:relative;
+}
+
+.admin-post-category{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:50px;
+    background:var(--primary-light);
+    color:var(--primary);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.admin-post-title{
+    font-size:27px;
+    font-weight:700;
+    color:var(--dark);
+    margin-bottom:12px;
+    line-height:1.4;
+}
+
+.admin-post-desc{
+    color:var(--text);
+    line-height:1.8;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+
+/*=========================================
+POST META
+=========================================*/
+
+.admin-post-meta{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.admin-post-meta span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--text);
+    font-size:14px;
+    font-weight:500;
+}
+
+.admin-post-meta i{
+    color:var(--primary);
+}
+
+/*=========================================
+    Approval Icon
+=========================================*/
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 900;
+
+    margin-left: 5px;
+    vertical-align: middle;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.verified-badge i {
+    line-height: 1;
+}
+
+/*=========================================
+THREE DOT MENU
+=========================================*/
+
+.admin-post-menu{
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.admin-menu-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:12px;
+    background:var(--bg);
+    color:var(--text);
+    transition:.3s;
+}
+
+.admin-menu-btn:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.admin-menu-dropdown{
+    position:absolute;
+    right:0;
+    top:52px;
+    width:190px;
+    background:var(--card);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+    display:none;
+    z-index:100;
+}
+
+.admin-menu-dropdown a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:var(--text);
+    padding:14px 18px;
+    transition:.3s;
+}
+
+.admin-menu-dropdown a:hover{
+    background:var(--primary-light);
+    color:var(--primary);
+}
+
+.admin-menu-dropdown a i{
+    width:18px;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:991px){
+
+    .dashboard-wrapper{
+        padding:20px;
+    }
+
+    .admin-post-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .admin-post-image{
+        width:100%;
+        min-width:100%;
+        height:250px;
+    }
+
+    .admin-post-content{
+        width:100%;
+        margin-top:5px;
+    }
+
+    .admin-post-menu{
+        top:-5px;
+        right:-5px;
+    }
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .dashboard-wrapper{
+        padding:15px;
+    }
+
+    .dashboard-title{
+        font-size:24px;
+    }
+
+    .dashboard-action{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .create-post-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+    .admin-post-card{
+        padding:16px;
+    }
+
+    .admin-post-image{
+        height:220px;
+    }
+
+    .admin-post-title{
+        font-size:22px;
+        padding-right:45px;
+    }
+
+    .admin-post-desc{
+        font-size:14px;
+    }
+
+    .admin-post-meta{
+        gap:16px;
+    }
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:576px){
+
+    .stats-card{
+        padding:22px;
+        min-height:130px;
+    }
+
+    .stats-card h2{
+        font-size:28px;
+    }
+
+    .stats-icon{
+        width:60px;
+        height:60px;
+    }
+
+    .stats-icon i{
+        font-size:24px;
+    }
+
+    .admin-post-image{
+        height:190px;
+    }
+
+    .admin-post-title{
+        font-size:20px;
+    }
+
+    .admin-post-meta{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .admin-menu-dropdown{
+        width:170px;
+    }
+}

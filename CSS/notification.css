@@ -1,0 +1,227 @@
+.notification .icon-a {
+    color:#374151;
+}
+
+/* =========================
+NOTIFICATION
+========================= */
+
+.notification{
+    position:relative;
+    width:36px;
+    height:36px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-size:25px;
+}
+
+.notification span{
+    position:absolute;
+    top:2px;
+    right:2px;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#ef4444;
+    color:#fff;
+    font-size:9px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:576px){
+    .notification{
+        font-size:20px;
+    }
+}
+
+/*=========================================
+NOTIFICATION PAGE
+=========================================*/
+
+#notification-page{
+    width:100%;
+    padding:25px;
+}
+
+.notification-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.notification-header{
+    margin-bottom:30px;
+}
+
+.notification-header h2{
+    font-size:30px;
+    color:#222;
+    margin-bottom:8px;
+    font-weight:700;
+}
+
+.notification-header p{
+    color:#888;
+    font-size:15px;
+}
+
+/*=========================================
+Notification List
+=========================================*/
+
+.notification-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/*=========================================
+Notification Card
+=========================================*/
+
+.notification-card{
+    position:relative;
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    padding:22px;
+    border-radius:18px;
+    background:rgba(255,255,255,.05);
+    border:1px solid #999;
+    backdrop-filter:blur(18px);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.notification-card:hover{
+    transform:translateY(-3px);
+    border-color:#6a5cff;
+    box-shadow:0 15px 30px rgba(0,0,0,.20);
+}
+
+/*=========================================
+Notification Icon
+=========================================*/
+
+.notification-icon{
+    width:55px;
+    height:55px;
+    min-width:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a5cff,#3b82f6);
+    color:#fff;
+    font-size:20px;
+}
+
+/*=========================================
+Content
+=========================================*/
+
+.notification-content{
+    flex:1;
+}
+
+.notification-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-bottom:10px;
+}
+
+.notification-top h4{
+    color:#222;
+    font-size:18px;
+    font-weight:600;
+}
+
+.notification-time{
+    color:#8d98bb;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+.notification-content p{
+    color:#c5cee9;
+    line-height:1.7;
+    font-size:15px;
+}
+
+/*=========================================
+Unread Notification
+=========================================*/
+
+.unread{
+    border-left:4px solid #4f7cff;
+}
+
+.unread-dot{
+    position:absolute;
+    top:22px;
+    right:20px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#4f7cff;
+}
+
+/*=========================================
+Responsive
+=========================================*/
+
+@media(max-width:768px){
+
+    #notification-page{
+        padding:15px;
+    }
+
+    .notification-card{
+        padding:18px;
+    }
+
+    .notification-top{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+    .notification-header h2{
+        font-size:25px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .notification-card{
+        gap:14px;
+        padding:15px;
+    }
+
+    .notification-icon{
+        width:45px;
+        height:45px;
+        min-width:45px;
+        font-size:17px;
+    }
+
+    .notification-top h4{
+        font-size:16px;
+    }
+
+    .notification-content p{
+        font-size:14px;
+    }
+
+}

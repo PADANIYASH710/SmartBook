@@ -1,0 +1,355 @@
+/* =================================
+        HELP CENTER
+================================= */
+
+.help-center {
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* =================================
+        HEADER
+================================= */
+
+.help-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.help-header-content h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.help-header-content h2 i {
+    color: #6366f1;
+    margin-right: 8px;
+}
+
+.help-header-content p {
+    margin: 6px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+        TOTAL REQUESTS
+================================= */
+
+.help-total {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 16px;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    border: 1px solid #e0e7ff;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.help-total i {
+    font-size: 15px;
+}
+
+
+/* =================================
+        TABLE CARD
+================================= */
+
+.help-table-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =================================
+        RESPONSIVE TABLE
+================================= */
+
+.help-table-card .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =================================
+        TABLE
+================================= */
+
+.help-table {
+    width: 100%;
+    min-width: 1050px;
+
+    border-collapse: collapse;
+}
+
+
+/* =================================
+        TABLE HEAD
+================================= */
+
+.help-table thead {
+    background: #f8faff;
+}
+
+.help-table th {
+    padding: 16px 18px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-align: left;
+
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* =================================
+        TABLE BODY
+================================= */
+
+.help-table td {
+    padding: 17px 18px;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #f0f1f4;
+
+    vertical-align: middle;
+}
+
+.help-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.help-table tbody tr:hover {
+    background: #fafbff;
+}
+
+.help-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =================================
+        REQUEST ID
+================================= */
+
+.help-id {
+    color: #6366f1 !important;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+        USER
+================================= */
+
+.help-user {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    min-width: 190px;
+}
+
+.help-avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.help-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.help-user-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.help-user-info strong {
+    color: #1f2937;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.help-user-info span {
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+
+/* =================================
+        SUBJECT
+================================= */
+
+.help-subject {
+    color: #1f2937;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+        DESCRIPTION
+================================= */
+
+.help-description {
+    width: 220px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+
+
+/* =================================
+        DATE
+================================= */
+
+.help-date {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+
+    white-space: nowrap;
+}
+
+.help-date strong {
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.help-date span {
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+/* =================================
+        Solve Button
+================================= */
+
+.solve-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    border: 1px solid #e0e7ff;
+    border-radius: 8px;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.solve-btn:hover {
+    background: #6366f1;
+    color: #ffffff;
+
+    border-color: #6366f1;
+
+    transform: translateY(-1px);
+}
+
+.solve-btn i {
+    font-size: 12px;
+}
+
+
+/* =================================
+        MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .help-center {
+        padding: 15px;
+    }
+
+    .help-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .help-header-content h2 {
+        font-size: 21px;
+    }
+
+    .help-total {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .help-table-card {
+        border-radius: 12px;
+    }
+
+}
